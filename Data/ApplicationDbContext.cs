@@ -34,5 +34,7 @@ namespace document_manager_asp.net.Data
                 document.Property(d => d.Format).IsRequired();
             });
         }
+
+        public DbSet<document_manager_asp.net.Models.Document> Document { get; set; } = default!;
     }
 }
